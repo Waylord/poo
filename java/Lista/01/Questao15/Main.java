@@ -1,10 +1,10 @@
-package Questao15;
-
 import java.util.Scanner;
 
 public class Main {
     public static float media(float p1, float p2) {
-        return (p1 + p2) / 2;
+        float nota = (p1 + p2) / 2;
+        System.out.println("Nota: "+nota);
+        return nota;
     }
 
     public static String resultado(float p1, float p2) {
