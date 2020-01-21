@@ -1,3 +1,7 @@
+/*
+Determine o número de dígitos de um número informado
+*/
+
 package Questao06;
 
 import java.util.Scanner;
