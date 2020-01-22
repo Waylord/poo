@@ -1,3 +1,9 @@
+/*
+Calcule  a  raiz  quadrada  aproximada  de  um  número  inteiro  informado  pelo  usuário, 
+respeitando  o erro  máximo  também  informado  pelo  usuário.  Não  utilize  funções 
+predefinidas.
+*/
+
 package Questao11;
 
 import java.util.Scanner;
