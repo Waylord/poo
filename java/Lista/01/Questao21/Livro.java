@@ -1,4 +1,4 @@
-package Questao21;
+package questao21;
 
 import java.util.Scanner;
 
@@ -6,6 +6,7 @@ public class Livro {
     public String livro;
     public String autor;
     public boolean disponivel = true;
+    public String emprestadoPara;
     
     public Livro() {
         Scanner tec = new Scanner(System.in);
@@ -17,12 +18,12 @@ public class Livro {
         
     }
     
-    public void exibeLivro(){
-        System.out.print(livro);
+    public String exibeLivro(){
+        return livro;
     }
     
-    public void exibeAutor(){
-        System.out.print(autor);
+    public String exibeAutor(){
+        return autor;
     }
     
     public boolean estaDisponivel(){
