@@ -4,19 +4,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main (String [] args) {
-        Livro model = new Livro();
-        Pessoa user = new Pessoa();
-        model.exibeLivro();
-        System.out.print(", por ");
-        model.exibeAutor();
-        System.out.println();
-        System.out.println("Disponibilidade: " + (model.estaDisponivel()? "Sim" : "Não"));
-        
-        System.out.print("Interessado: ");
-        user.exibeNomePessoa();
-        System.out.print(", Telefone: ");
-        user.exibeTelefonePessoa();
 
+        /* O código cadastra duas pessoas e tenta emprestar o mesmo livro entre elas,
+        retorna erro, a primeira devolve o livro e a segunda consegue realizar o emprestimo. */
+        Livro book = new Livro();
+        Pessoa user = new Pessoa();
+        Pessoa user2 = new Pessoa();
+        Emprestimo lending = new Emprestimo(book, user);
+        lending.realizarEmprestimo(book, user2);
+        lending.devolverEmprestimo(book, user);
+        lending.realizarEmprestimo(book,user2);
 
     }
 }
