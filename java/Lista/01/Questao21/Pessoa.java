@@ -7,6 +7,7 @@ public class Pessoa {
     public long cpf;
     public long telefone;
     public boolean possuiEmprestimo = false;
+    public String livroEmprestado;
     
     public Pessoa(){
         Scanner tec = new Scanner(System.in);
@@ -18,16 +19,16 @@ public class Pessoa {
         telefone = tec.nextLong();
     }
     
-    public void exibeNomePessoa(){
-        System.out.print(nome);
+    public String exibeNomePessoa(){
+        return nome;
     }
     
-    public void exibeCpfPessoa(){
-        System.out.print(cpf);
+    public long exibeCpfPessoa(){
+        return cpf;
     }
     
-    public void exibeTelefonePessoa(){
-        System.out.print(telefone);
+    public long exibeTelefonePessoa(){
+        return telefone;
     }
     
     public boolean verificaEmprestimoAtivo(){
