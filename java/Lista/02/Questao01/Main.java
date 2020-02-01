@@ -2,7 +2,7 @@ package Questao01;
 
 import java.util.Scanner;
 
-Public class Main {
+public class Main {
     public static void main (String[] args) {
         Pessoa filho = new Pessoa(),
                mae = new Pessoa (),
